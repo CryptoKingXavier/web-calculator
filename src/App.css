@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 20rem;
+  background-color: beige;
+  scroll-behavior: smooth;
+}
+
+form {
+  border: 3px solid burlywood;
+  padding: 0.5rem 1.3rem 2rem 1.3rem;
+  border-radius: 1.5rem;
+  box-shadow: 2px 1px 3px 3px brown;
+}
+
+h1 {
+  text-align: center;
+  color: teal;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.screen {
+  height: 6rem;
+  width: 20rem;
+  border: 4px solid gray;
+  border-radius: 0.5rem;
+  font-size: 40px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.screen,
+#screen_display {
+  cursor: none;
+}
+
+button {
+  background-color: brown;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  margin: 0px;
+  padding: 0px;
+  font-size: larger;
+  color: white;
+  transition: all ease-in-out infinite;
+}
+
+button:hover {
+  transform: scale(1.05);
+  border-color: darkslategrey;
+}
+
+.button_equal button {
+  background-color: crimson;
+}
+.buttonX button {
+  background-color: crimson;
+}
+.button_divide button {
+  background-color: crimson;
+}
+.button_plus button {
+  background-color: crimson;
+}
+.button_minus button {
+  background-color: crimson;
+}
+.clear button {
+  background-color: darkslategray;
+}
+
+.buttons {
+  height: 30rem;
+  margin-top: 2px;
+  position: relative;
+  display: grid;
+  gap: 0.2rem;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "clear divide X minus"
+    "b7 b8 b9 plus"
+    "b4 b5 b6 plus"
+    "b1 b2 b3 equal"
+    "b0 b_dot b00 equal";
+  border-radius: 1rem;
+  background-color: snow;
+}
+
+.button7 {
+  grid-area: b7;
+}
+.button8 {
+  grid-area: b8;
+}
+.button9 {
+  grid-area: b9;
+}
+.button5 {
+  grid-area: b5;
+}
+.button3 {
+  grid-area: b3;
+}
+.button2 {
+  grid-area: b2;
+}
+.button1 {
+  grid-area: b1;
+}
+.button6 {
+  grid-area: b6;
+}
+.button4 {
+  grid-area: b4;
+}
+.button0 {
+  grid-area: b0;
+}
+.button00 {
+  grid-area: b00;
+}
+.clear {
+  grid-area: clear;
+}
+.button_plus {
+  grid-area: plus;
+}
+.button_divide {
+  grid-area: divide;
+}
+.button_dot {
+  grid-area: b_dot;
+}
+.button_equal {
+  grid-area: equal;
+}
+.button_minus {
+  grid-area: minus;
+}
+.buttonX {
+  grid-area: X;
+}
